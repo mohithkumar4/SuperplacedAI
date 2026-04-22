@@ -3,25 +3,100 @@
 @tailwind utilities;
 
 :root {
-  --background: #ffffff;
-  --foreground: #171717;
+  --parchment: #f5f4ed;
+  --near-black: #141413;
+  --bg-parchment: #f5f4ed;
+  --text-dark: #1c1b18;
+  --text-muted: #5e5d59;
+  --text-faint: #87867f;
+  --accent: #c96442;
+  --accent-hover: #b3563a;
+  --sand: #e8e6dc;
+  --border-warm: #dddbd0;
+  --card-dark: #141413;
+  --card-border: #30302e;
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
-  }
+html {
+  scroll-behavior: smooth;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
 }
 
 body {
-  color: var(--foreground);
-  background: var(--background);
-  font-family: Arial, Helvetica, sans-serif;
+  background: var(--parchment);
+  color: var(--near-black);
+  font-family: var(--font-sans), 'DM Sans', sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  overflow-x: hidden;
 }
 
-@layer utilities {
-  .text-balance {
-    text-wrap: balance;
+::selection {
+  background: #c96442;
+  color: #faf9f5;
+}
+
+
+@media (max-width: 1024px) {
+  body {
+    cursor: auto;
   }
+}
+
+/* Floating card animation */
+@keyframes float {
+
+  0%,
+  100% {
+    transform: translateY(0px);
+  }
+
+  50% {
+    transform: translateY(-8px);
+  }
+}
+
+.agent-card-float {
+  animation: float 3s ease-in-out infinite;
+}
+
+/* Pulsing text animation */
+@keyframes pulse-text {
+
+  0%,
+  100% {
+    opacity: 1;
+  }
+
+  50% {
+    opacity: 0.4;
+  }
+}
+
+.pulsing-text {
+  animation: pulse-text 2s ease-in-out infinite;
+}
+
+/* Pulsing dot */
+@keyframes pulse-dot {
+
+  0%,
+  100% {
+    box-shadow: 0 0 0 0 rgba(34, 197, 94, 0.4);
+  }
+
+  50% {
+    box-shadow: 0 0 0 5px rgba(34, 197, 94, 0);
+  }
+}
+
+.pulse-dot {
+  animation: pulse-dot 1.8s ease-out infinite;
 }

@@ -1,0 +1,16 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(npx create-next-app@14 *)",
+      "Bash(shopt -s dotglob nullglob)",
+      "Bash(mv \"superplaced-ai\"/* .)",
+      "Bash(rmdir \"superplaced-ai\")",
+      "Bash(npm install *)",
+      "mcp__context7__resolve-library-id",
+      "Bash(npm run *)",
+      "mcp__context7__query-docs",
+      "Bash(npm ls *)",
+      "Bash(npm view *)"
+    ]
+  }
+}

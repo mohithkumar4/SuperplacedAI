@@ -1,5 +1,5 @@
 {
-  "name": "supernova-ai",
+  "name": "superplaced-ai",
   "version": "0.1.0",
   "private": true,
   "scripts": {
@@ -9,18 +9,24 @@
     "lint": "next lint"
   },
   "dependencies": {
+    "@react-three/drei": "^9.122.0",
+    "@react-three/fiber": "^8.18.0",
+    "@react-three/postprocessing": "^2.16.3",
+    "framer-motion": "^12.38.0",
+    "lucide-react": "^1.8.0",
+    "next": "^16.2.4",
     "react": "^18",
     "react-dom": "^18",
-    "next": "14.2.35"
+    "three": "^0.184.0"
   },
   "devDependencies": {
-    "typescript": "^5",
     "@types/node": "^20",
     "@types/react": "^18",
     "@types/react-dom": "^18",
+    "eslint": "^8",
+    "eslint-config-next": "^16.2.4",
     "postcss": "^8",
     "tailwindcss": "^3.4.1",
-    "eslint": "^8",
-    "eslint-config-next": "14.2.35"
+    "typescript": "^5"
   }
 }
