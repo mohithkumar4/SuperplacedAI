@@ -79,10 +79,9 @@ The easiest way to deploy is via the Vercel Platform. Check the Next.js deployme
 ## Environment Variables
 
 ```bash
-NEXT_PUBLIC_SITE_URL=https://superplaced.ai
-NEXT_PUBLIC_WAITLIST_EMAIL=hello@superplaced.ai
+NEXT_PUBLIC_SITE_URL=https://your-site-url.com
+NEXT_PUBLIC_WAITLIST_EMAIL=hello@your-domain.com
 ```
-
 ---
 
 ## Learn More
