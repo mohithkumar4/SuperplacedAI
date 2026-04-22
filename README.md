@@ -19,7 +19,7 @@ Frontend built by Claude Code + Antigravity.
 **1. Clone the repo**
 ```bash
 git clone https://github.com/yourusername/superplaced-ai.git
-cd superplaced-ai
+cd superplaced-ai[folder name] try with ls\\then folder name\....
 ```
 
 **2. Install dependencies**
